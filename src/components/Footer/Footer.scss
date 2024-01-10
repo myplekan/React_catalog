@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 -1px 0 0 $gray-elements;
+
+  &__container {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include onMobile {
+      flex-direction: column;
+      align-items: start;
+      gap: 32px;
+      width: 100%;
+      max-width: 288px;
+      padding: 32px 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    display: inline-flex;
+  }
+
+  &__rightSide {
+    display: inline-flex;
+    align-items: center;
+    @include onMobile {
+      margin: 0 auto;
+    }
+
+    &-title {
+      font-size: 12px;
+      font-weight: 600;
+      padding-right: 16px;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: 1px solid $gray-icons-placeholders;
+    transition: all 500ms;
+  }
+
+  &__button:hover {
+    border-color: $gray-primary;
+  }
+}

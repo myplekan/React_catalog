@@ -1,0 +1,40 @@
+@import "./variables";
+@import "./mixins";
+
+.favourites {
+  width: 1136px;
+  margin: 0 auto;
+  flex-grow: 1;
+  @include onTablet {
+    width: 592px;
+  }
+  @include onMobile {
+    width: 288px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    margin-bottom: 8px;
+  }
+  
+  &__count {
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  &__container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+    @include onTablet {
+      gap: 48px;
+    }
+    @include onMobile {
+      justify-content: center;
+    }
+  }
+}

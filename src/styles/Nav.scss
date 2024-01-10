@@ -1,0 +1,53 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    height: 64px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include onTablet {
+      height: 48px;
+      gap: 32px;
+    }
+    @include onMobile {
+      flex-direction: column;
+      gap: 16px;
+      align-items: start;
+      height: 100%;
+    }
+  }
+
+  &--center {
+    @include onMobile {
+      padding-top: 24px;
+      align-items: center;
+    }
+  }
+  
+  &-item {
+    color: $gray-secondary;
+    padding: 22px 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 300ms;
+    @include onTablet {
+      padding: 14px 0;
+    }
+    @include onMobile {
+      padding: 8px 0;
+    }
+  }
+
+  &-item:hover {
+    color: $gray-primary;
+  }
+}
