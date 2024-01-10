@@ -43,7 +43,6 @@ export const Banner = () => {
     return setFirstImage(num => num - 1);
   };
 
-
   const pageWidth = window.innerWidth;
   let transformWidth = pageWidth < 1200 ? 496 : 1040
 

@@ -116,8 +116,6 @@ export const ProductDetailsPage = () => {
 
     return setFirstPhone((num) => num + 1);
   };
-
-console.log(details?.cell)
   
   return (
     <div className="product-details__container mb-80">

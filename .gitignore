@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,3 +22,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+# IDE
+.idea
+.vscode
+
+# Node
+node_modules
+
+# MacOS
+.DS_Store
+
+# Generated files
+backstop_data
+dist
+.cache
+.parcel-cache
+>>>>>>> f601988ba642f749314955b65f1ae0fb886a9023
