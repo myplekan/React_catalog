@@ -1,0 +1,49 @@
+@import "./variables";
+@import "./mixins";
+
+.phones {
+  &__container {
+    width: 1136px;
+    margin: 0 auto;
+    flex-grow: 1;
+    @include onTablet {
+      max-width: 592px;
+    }
+    @include onMobile {
+      max-width: 272px;
+    }
+  }
+  
+  &-title {
+    margin-bottom: 8px;
+  }
+  
+  &-card__container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 16px;
+    margin-bottom: 40px;
+    @include onTablet {
+      column-gap: 48px;
+    }
+  }
+  
+  &__selects {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 16px;
+  }
+  
+  &__way {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+  }
+  
+  &__m-b {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
