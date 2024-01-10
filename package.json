@@ -11,6 +11,7 @@
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "classnames": "^2.5.1",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,9 +54,11 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "3.1.1",
-    "sass": "^1.69.7"
+    "sass": "^1.69.7",
+    "stylelint-scss": "^6.0.0"
   },
   "lint-staged": {
     "*.js": "npm run fix-style"
-  }
+  },
+  "homepage": "https://myplekan.github.io/React_catalog"
 }
