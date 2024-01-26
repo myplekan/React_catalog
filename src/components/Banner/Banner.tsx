@@ -43,7 +43,19 @@ export const Banner = () => {
   };
 
   const pageWidth = window.innerWidth;
-  let transformWidth = pageWidth < 1200 ? 496 : 1040;
+  const findWidth = (width: number) => {
+    switch (true) {
+      case width >= 1200:
+        return 1040;
+      case width < 1200 && width >= 640:
+        return 496;
+      case width < 640 && width >= 320:
+        return 288;
+      default:
+        break;
+    }
+  }
+  let transformWidth = findWidth(pageWidth) || 1040;
 
   return (
     <>

@@ -9,5 +9,6 @@
     - CSS (SCSS): A CSS preprocessor for convenient and organized styling.
     - ESLint: A tool for static code analysis to detect and fix errors.
     - JavaScript for logic and interactivity.
+    - Redux Toolkit for state management.
 3. Preview:
     - [Phone catalog Preview](https://myplekan.github.io/React_catalog/#/)
