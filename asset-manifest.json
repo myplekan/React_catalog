@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React_catalog/static/css/main.1b3e12d4.css",
-    "main.js": "/React_catalog/static/js/main.e9a04556.js",
+    "main.js": "/React_catalog/static/js/main.731f27af.js",
     "static/media/banner-phones.png": "/React_catalog/static/media/banner-phones.b4eeda8bd82b712057a2.png",
     "static/media/banner-tablets.png": "/React_catalog/static/media/banner-tablets.a962057c1043a08f7737.png",
     "static/media/category-tablets.png": "/React_catalog/static/media/category-tablets.ed3dd9df51129690126b.png",
@@ -9,10 +9,10 @@
     "static/media/banner-accessories.png": "/React_catalog/static/media/banner-accessories.bdd2e0fca0159e52f41c.png",
     "index.html": "/React_catalog/index.html",
     "main.1b3e12d4.css.map": "/React_catalog/static/css/main.1b3e12d4.css.map",
-    "main.e9a04556.js.map": "/React_catalog/static/js/main.e9a04556.js.map"
+    "main.731f27af.js.map": "/React_catalog/static/js/main.731f27af.js.map"
   },
   "entrypoints": [
     "static/css/main.1b3e12d4.css",
-    "static/js/main.e9a04556.js"
+    "static/js/main.731f27af.js"
   ]
 }
