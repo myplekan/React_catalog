@@ -17,7 +17,9 @@
     border: 1px solid $gray-elements;
     text-decoration: none;
     color: $gray-primary;
-    transition: background-color 500ms, color 500ms;
+    transition:
+      background-color 500ms,
+      color 500ms;
   }
 
   &-link:hover {
@@ -29,7 +31,6 @@
     background-color: $gray-primary;
     color: #fff;
   }
-
 }
 
 .disabled {

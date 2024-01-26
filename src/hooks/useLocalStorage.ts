@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export function useLocalStorage<T>(
-  key: string, startValue: T,
+  key: string,
+  startValue: T,
 ): [T, (v: T) => void] {
   const [value, setValue] = useState(() => {
     const data = localStorage.getItem(key);

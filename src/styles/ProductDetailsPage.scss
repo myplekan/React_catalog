@@ -235,7 +235,7 @@
     }
 
     &__button {
-      max-width: 263px;
+      width: 263px;
       height: 48px;
       padding: 0;
       background-color: $gray-primary;
@@ -263,6 +263,12 @@
       margin-bottom: 32px;
       height: 48px;
       transition: box-shadow 500ms;
+      @include onTablet {
+        width: 180px;
+      }
+      @include onMobile {
+        width: 230px;
+      }
     }
 
     &__button:hover,

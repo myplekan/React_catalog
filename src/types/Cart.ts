@@ -1,7 +1,7 @@
-import { Product } from './product';
+import { Product } from "./product";
 
 export type Cart = {
-  product: Product
-  id: string
-  quantity: number
+  product: Product;
+  id: string;
+  quantity: number;
 };

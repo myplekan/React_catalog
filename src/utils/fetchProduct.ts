@@ -1,22 +1,21 @@
-import { ProductDetails } from '../types/ProductDetails';
-import { Product } from '../types/product';
+import { ProductDetails } from "../types/ProductDetails";
+import { Product } from "../types/product";
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-const BASE_URL = 'https://mate-academy.github.io/react_phone-catalog/_new/';
+const BASE_URL = "https://mate-academy.github.io/react_phone-catalog/_new/";
 
 // returns a promise resolved after a given delay
 function wait(delay: number) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(resolve, delay);
   });
 }
 
 // To have autocompletion and avoid mistypes
-type RequestMethod = 'GET' | 'POST' | 'PATCH' | 'DELETE';
+type RequestMethod = "GET" | "POST" | "PATCH" | "DELETE";
 
 function request<T>(
   url: string,
-  method: RequestMethod = 'GET',
+  method: RequestMethod = "GET",
   data: any = null, // we can send any data to the server
 ): Promise<T> {
   const options: RequestInit = { method };
@@ -25,14 +24,14 @@ function request<T>(
     // We add body and Content-Type only for the requests with data
     options.body = JSON.stringify(data);
     options.headers = {
-      'Content-Type': 'application/json; charset=UTF-8',
+      "Content-Type": "application/json; charset=UTF-8",
     };
   }
 
   // we wait for testing purpose to see loaders
   return wait(300)
     .then(() => fetch(BASE_URL + url, options))
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error();
       }
@@ -43,13 +42,13 @@ function request<T>(
 
 export const client = {
   get: <T>(url: string) => request<T>(url),
-  post: <T>(url: string, data: any) => request<T>(url, 'POST', data),
-  patch: <T>(url: string, data: any) => request<T>(url, 'PATCH', data),
-  delete: (url: string) => request(url, 'DELETE'),
+  post: <T>(url: string, data: any) => request<T>(url, "POST", data),
+  patch: <T>(url: string, data: any) => request<T>(url, "PATCH", data),
+  delete: (url: string) => request(url, "DELETE"),
 };
 
 export const getProduct = () => {
-  return client.get<Product[]>('products.json');
+  return client.get<Product[]>("products.json");
 };
 
 export const getProductDetails = (id: string) => {

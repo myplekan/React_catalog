@@ -1,4 +1,4 @@
 export type PhoneDescription = {
-  title: string
-  text: string
+  title: string;
+  text: string;
 };

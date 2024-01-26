@@ -1,5 +1,3 @@
 export const PhoneNotFoundPage = () => {
-  return (
-    <h1 className="cart__title">Phone was not found</h1>
-  );
+  return <h1 className="cart__title">Phone was not found</h1>;
 };
